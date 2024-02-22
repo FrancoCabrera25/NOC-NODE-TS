@@ -1,0 +1,28 @@
+{
+  "name": "noc-node-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "tsnd --respawn --clear src/app.ts",
+    "build": "rimraf ./dist && tsc",
+    "start": "npm run build && node dist/app.js"
+  },
+  "keywords": [],
+  "author": "Franco Cabrera",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.11.16",
+    "@types/nodemailer": "^6.4.14",
+    "rimraf": "^5.0.5",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "cron": "^3.1.6",
+    "dotenv": "^16.4.3",
+    "env-var": "^7.4.1",
+    "nodemailer": "^6.9.9"
+  }
+}
